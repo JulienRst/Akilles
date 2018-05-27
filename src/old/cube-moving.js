@@ -1,7 +1,6 @@
 import './sass/main.scss'
 import * as THREE from 'three'
-import OrbitControls from './utils/OrbitControl'
-import MouseControl from './utils/MouseControl'
+import OrbitControls from './OrbitControl'
 
 // Renderer
 const renderer = new THREE.WebGLRenderer()
@@ -14,8 +13,7 @@ scene.background = new THREE.Color(0x333333)
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 1, 2000)
 camera.position.set(0, 0, 400)
 
-let controls = new OrbitControls(camera, renderer.domElement)
-let mouse = new MouseControl()
+let controls = new OrbitControls(camera, renderer.domElement);
 
 // Cube
 const cubes = [
