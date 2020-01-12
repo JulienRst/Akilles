@@ -1,4 +1,3 @@
-import * as THREE from 'three'
 const MouseControl = function () {
   this.x = 0
   this.y = 0

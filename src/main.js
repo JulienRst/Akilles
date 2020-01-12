@@ -52,10 +52,10 @@ let d = 25
 
 const animate = () => {
   requestAnimationFrame(animate)
-  if (d > 100 || d < 23) {
+  if (d > 200 || d < 23) {
     modif *= -1
   }
-  d += (modif * 0.5)
+  d += (modif * 1)
   cubeMesh.forEach((cube) => {
     const vector = [
       (cube.position.x > 0),
