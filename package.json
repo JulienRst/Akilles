@@ -22,6 +22,6 @@
   },
   "dependencies": {
     "file-loader": "^1.1.11",
-    "three": "^0.92.0"
+    "three": "^0.125.0"
   }
 }
